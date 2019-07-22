@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        console.log("Hola mundo");
+        alert("Hola me llamo Eric");
+        var nom = "Eric";
+        var cognom = "Araujo";
+        console.log(nom + " " + cognom);
+        var a = 2,
+            b = 4;
+        console.log(a + b);
+
+        function comprobar() {
+            var nota = document.getElementById("notaexamen").value;
+            if (nota >= 5) {
+                alert("Has aprobado el exámen con un: " + nota);
+            } else {
+                alert("Has suspendido el exámen con un: " + nota);
+            }
+        }
+
+        var frase1 = "Tinc un cotxe de color blau"
+        var frase2 = frase1.replace("blau", "verd")
+        console.log("Cambiar blau por verd: " + frase2)
+        var frase3 = frase1.replace(/o/g, "u")
+        console.log("Cambiar o por u: " + frase3)
+
+        var llistaObjectes = ["taula", "cadira", "ordinador", "llibreta"]
+        for (i = 0; i < llistaObjectes.length; i++) {
+            console.log("Soy un/a: " + llistaObjectes[i] + " y estoy en la posición: " + i);
+        }
+
+        function calculadora() {
+            var operacion = document.getElementById("operador").value
+            var valor1 = document.getElementById("numero1").value
+            var valor2 = document.getElementById("numero2").value
+            var operand1 = parseInt(valor1,10)
+            var operand2 = parseInt(valor2,10)
+            switch (operacion) {
+                case "+":
+                    alert(operand1 + operand2)
+                    break;
+                case "-":
+                    alert(operand1 - operand2)
+                    break;
+                case "*":
+                    alert(operand1 * operand2)
+                    break;
+                case 3:
+                    alert("Operación no válida")
+                    break;
+            }
+        }
+
+    </script>
+    <input type="text" id="notaexamen">
+    <button id="compnota" onclick="comprobar()">Comprueba tu nota!!</button>
+    <input type="text" id="numero1">
+    <input type="text" id="numero2">
+    <input type="text" id="operador">
+    <button id="calcula" onclick="calculadora()">Calcula tu resultado</button>
+</body>
+
+</html>
