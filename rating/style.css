@@ -1,0 +1,30 @@
+.fa-heart-o {
+    display: inline !important;
+    vertical-align: middle;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 3px;
+    line-height: 350px;
+    text-align:center;
+}
+
+.corazonrojo{
+    font-size:48px;
+    -webkit-transform: scale(3);
+    color:red;
+}
+
+.corazonnegro{
+    font-size:48px;
+    -webkit-transform: scale(3);
+    color:black;
+}
